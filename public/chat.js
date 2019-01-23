@@ -1,5 +1,5 @@
 var socket = io.connect('https://nostalgic-knuth-af0ef5.netlify.com/');
-
+console.log(process.env.PORT);
 //DOM qurying
 let name = document.getElementById('person'),
     message = document.getElementById('message'),
