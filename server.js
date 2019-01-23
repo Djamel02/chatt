@@ -16,6 +16,7 @@ var io = socket(server)
 //made connection
 io.on('connection',(socket) =>{
 
+    
     socket.on('chat',(data)=>{
         io.sockets.emit('chat',data)
     })
