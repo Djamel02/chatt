@@ -1,4 +1,4 @@
-var socket = io.connect('http://localhost:4000');
+var socket = io.connect('https://nostalgic-knuth-af0ef5.netlify.com');
 
 //DOM qurying
 let name = document.getElementById('person'),
