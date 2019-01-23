@@ -3,7 +3,8 @@ const socket = require('socket.io');
 
 //set up 
 const app = express();
-const server = app.listen(4000,(err) =>{
+const port = process.env.PORT || 4000
+const server = app.listen(port,(err) =>{
     if(err) throw err;
     console.log('server running on localhost:4000')
 })
