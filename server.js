@@ -6,7 +6,7 @@ const app = express();
 const port = process.env.PORT || 4000
 const server = app.listen(port,(err) =>{
     if(err) throw err;
-    console.log('server running on localhost:4000')
+    console.log('server running on '+port)
 })
 //static files
 app.use(express.static('public'))
